@@ -36,18 +36,19 @@ const windows_1252 = [
 ];
 
 const entity_pattern = new RegExp(
-	`&(#?(?:x[\\w\\d]+|\\d+|${Object.keys(entities).join('|')}))(?:;|\\b)`,
+	`&(?:(${Object.keys(entities).join('|')}|#[xX][\\da-fA-F]+|#\\d+));`,
+	//`&(#?(?:x[\\w\\d]+|\\d+|${Object.keys(entities).join('|')}))(?:;|\\b)`,
 	'g'
 );
 
 export function decode_character_references(html: string) {
 	return html.replace(entity_pattern, (match, entity) => {
-		let code;
+		let code: number;
 
 		// Handle named entities
 		if (entity[0] !== '#') {
 			code = entities[entity];
-		} else if (entity[1] === 'x') {
+		} else if (entity[1].toLowerCase() === 'x') {
 			code = parseInt(entity.substring(2), 16);
 		} else {
 			code = parseInt(entity.substring(1), 10);

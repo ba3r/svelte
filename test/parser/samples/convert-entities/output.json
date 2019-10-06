@@ -1,15 +1,70 @@
 {
 	"html": {
 		"start": 0,
-		"end": 17,
+		"end": 91,
 		"type": "Fragment",
 		"children": [
 			{
 				"start": 0,
-				"end": 17,
+				"end": 32,
+				"type": "Element",
+				"name": "span",
+				"attributes": [],
+				"children": [
+					{
+						"start": 6,
+						"end": 25,
+						"type": "Text",
+						"raw": "Named &copy; &COPY;",
+						"data": "Named © ©"
+					}
+				]
+			},
+			{
+				"start": 32,
+				"end": 33,
 				"type": "Text",
-				"raw": "Hello &amp; World",
-				"data": "Hello & World"
+				"raw": "\n",
+				"data": "\n"
+			},
+			{
+				"start": 33,
+				"end": 60,
+				"type": "Element",
+				"name": "span",
+				"attributes": [],
+				"children": [
+					{
+						"start": 39,
+						"end": 53,
+						"type": "Text",
+						"raw": "Decimal &#169;",
+						"data": "Decimal ©"
+					}
+				]
+			},
+			{
+				"start": 60,
+				"end": 61,
+				"type": "Text",
+				"raw": "\n",
+				"data": "\n"
+			},
+			{
+				"start": 61,
+				"end": 91,
+				"type": "Element",
+				"name": "span",
+				"attributes": [],
+				"children": [
+					{
+						"start": 67,
+						"end": 84,
+						"type": "Text",
+						"raw": "Hex &#xa9; &#XA9;",
+						"data": "Hex © ©"
+					}
+				]
 			}
 		]
 	}
