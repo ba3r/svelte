@@ -21,7 +21,7 @@
 								"end": 75,
 								"type": "Text",
 								"raw": "semi:&quot;space:&quot letter:&quote number:&quot1 end:&quot",
-								"data": "semi:\"space:\" letter:&quote number:&quot1 end:\""
+								"data": "semi:\"space:&quot letter:&quote number:&quot1 end:&quot"
 							}
 						]
 					}
